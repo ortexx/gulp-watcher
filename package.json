@@ -1,0 +1,25 @@
+{
+    "name": "gulp-watcher",
+    "version": "0.0.1",
+    "description": "Watcher for gulp with pause function",
+    "main": "./gulp-watcher.js",
+    "author": {
+        "name": "Balasyan Alexandr",
+        "email": "mywebstreet@gmail.com"
+    },
+    "keywords": [
+        "gulp",
+        "watcher",
+        "watch",
+        "pause",
+        "continue"
+    ],
+    "license": "MIT",
+    "dependencies": {
+        "gulp": "*"
+    }, 
+	"repository" : { 
+		"type" : "git",
+		"url" : "https://github.com/ortexx/gulp-watcher"
+	}	
+}
