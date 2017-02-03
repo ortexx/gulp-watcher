@@ -1,25 +1,35 @@
 {
-    "name": "gulp-watcher",
-    "version": "0.0.1",
-    "description": "Watcher for gulp with pause function",
-    "main": "./gulp-watcher.js",
-    "author": {
-        "name": "Balasyan Alexandr",
-        "email": "mywebstreet@gmail.com"
-    },
-    "keywords": [
-        "gulp",
-        "watcher",
-        "watch",
-        "pause",
-        "continue"
-    ],
-    "license": "MIT",
-    "dependencies": {
-        "gulp": "*"
-    }, 
-	"repository" : { 
-		"type" : "git",
-		"url" : "https://github.com/ortexx/gulp-watcher"
-	}	
+  "name": "gulp-watcher",
+  "version": "1.0.0",
+  "description": "Watcher for gulp with a pause function",
+  "main": "./gulp-watcher.js",
+  "author": {
+    "name": "Balasyan Alexandr",
+    "email": "mywebstreet@gmail.com"
+  },
+  "keywords": [
+    "gulp",
+    "watcher",
+    "watch",
+    "pause",
+    "continue"
+  ],
+  "scripts": {
+    "test": "mocha"
+  },
+  "dependencies": {
+    "gulp": "^3.9.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ortexx/gulp-watcher"
+  },
+  "devDependencies": {
+    "mocha": "^3.2.0",
+    "chai": "^3.5.0",
+    "fs-extra": "^2.0.0"
+  },
+  "engines": {
+    "node": ">=5.0.0"
+  }
 }

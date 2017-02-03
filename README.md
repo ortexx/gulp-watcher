@@ -1,11 +1,13 @@
 # gulp-watcher
-Watcher for gulp with pause function. Base on gulp.watch
+Watcher for gulp with a pause function. Based on gulp.watch
 
-Sometimes you need to change files in same directory. 
+Sometimes you need to watch and change files in the same directory. 
 
-This will lead to infinite loops of watcher. You can use pause function here.
+You can use pause function here.
+
 # Install 
 `npm install gulp-watcher`
+
 # Example
 ```js
 var gulp = require('gulp');
@@ -15,7 +17,7 @@ var watcher = require('gulp-watcher');
 gulp.task('requirejs', function () {
   watcher.pause('requirejs');
   
-  // for example complie files with requirejs in same directory ('public/js/')
+  // FOR EXAMPLE, you would like to compile files with requirejs in the same directory ('public/js/')
   gulp.src(['public/js/**/*.js'])
   .pipe(requirejs({...options}))
   .pipe(gulp.dest("public/js"))
@@ -25,6 +27,16 @@ gulp.task('requirejs', function () {
 })
 
 gulp.task('watch', function () {
-    watcher.create('requirejs', ['public/js/**/*.js']);
+    watcher.create('requirejs', ['public/js/**/*.js'], ['requirejs']);
 })
 ```
+
+# Api 
+### .create(name, ...gulp.watch args)  
+Create a watcher
+
+### .pause(name)  
+Set a pause
+
+### .stop(name)  
+Stop a watcher and clear them
