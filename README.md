@@ -10,9 +10,9 @@ You can use pause function here.
 
 # Example
 ```js
-var gulp = require('gulp');
-var requirejs = require('gulp-requirejs');
-var watcher = require('gulp-watcher');
+const gulp = require('gulp');
+const requirejs = require('gulp-requirejs');
+const watcher = require('gulp-watcher');
 
 gulp.task('requirejs', function () {
   watcher.pause('requirejs');

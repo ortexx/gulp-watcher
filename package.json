@@ -1,6 +1,6 @@
 {
   "name": "gulp-watcher",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Watcher for gulp with a pause function",
   "main": "./gulp-watcher.js",
   "author": {

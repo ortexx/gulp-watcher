@@ -1,6 +1,6 @@
 ﻿"use strict";
 
-let gulp = require('gulp');
+const gulp = require('gulp');
 
 let watcher = {};
 watcher.list = {};
